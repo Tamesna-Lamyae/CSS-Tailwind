@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="../dist/styles.css" rel="stylesheet">
+    <title>Lamyae Blog Landing Page</title>
+</head>
+<body class="bg-gray-100">
+
+    <!-- Header Section -->
+    <header class="bg-gradient-to-r from-purple-800 to-blue-600 text-white p-6 sticky top-0 z-50 mb-8">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-3xl font-bold">Lamyae's Blog</h1>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="#home" class="hover:text-gray-300">Home</a></li>
+                    <li><a href="#articles" class="hover:text-gray-300">Articles</a></li>
+                    <li><a href="#about" class="hover:text-gray-300">About</a></li>
+                    <li><a href="#contact" class="hover:text-gray-300">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="bg-cover bg-center h-96" style="background-image: url('https://www.bonjourdarling.com/wp-content/uploads/2024/05/look_article_blog_next-1600x1200.jpg  ');">
+        <div class="flex items-center justify-center h-full bg-black bg-opacity-50">
+            <div class="text-center">
+                <h2 class="text-white text-5xl font-bold mb-4">Inspiration, Motivation, and Knowledge</h2>
+                <p class="text-gray-200 text-lg mb-6">Discover the latest articles on personal development and career growth</p>
+                <a href="#articles" class="bg-yellow-500 text-white px-6 py-3 rounded-full font-semibold hover:bg-yellow-600">Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Articles Section -->
+    <section id="articles" class="p-8 bg-white" style="background-image: url('https://www.bonjourdarling.com/wp-content/uploads/2024/05/look_article_blog_next-1600x1200.jpg  ');"  >
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-semibold mb-6 text-gray-800" >Featured Articles</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Article 1 -->
+                <article class="bg-gray-50 p-4 rounded-lg shadow-lg">
+                    <img src="article1.jpg" alt="Article 1" class="rounded-t-lg">
+                    <h3 class="font-bold text-lg mt-2">The Power of Positive Thinking</h3>
+                    <p class="text-gray-600">Learn how a positive mindset can transform your career and personal life...</p>
+                    <a href="#" class="text-blue-600 hover:underline">Read More</a>
+                </article>
+                <!-- Article 2 -->
+                <article class="bg-gray-50 p-4 rounded-lg shadow-lg">
+                    <img src="article2.jpg" alt="Article 2" class="rounded-t-lg">
+                    <h3 class="font-bold text-lg mt-2">Building a Personal Brand</h3>
+                    <p class="text-gray-600">Discover key strategies to build a personal brand that stands out in your industry...</p>
+                    <a href="#" class="text-blue-600 hover:underline">Read More</a>
+                </article>
+                <!-- Article 3 -->
+                <article class="bg-gray-50 p-4 rounded-lg shadow-lg">
+                    <img src="article3.jpg" alt="Article 3" class="rounded-t-lg">
+                    <h3 class="font-bold text-lg mt-2">Time Management Tips for Busy Professionals</h3>
+                    <p class="text-gray-600">Learn effective time management techniques to increase your productivity...</p>
+                    <a href="#" class="text-blue-600 hover:underline">Read More</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="p-8 bg-gray-100" style="background-image: url('https://www.bonjourdarling.com/wp-content/uploads/2024/05/look_article_blog_next-1600x1200.jpg  ');" >
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-semibold mb-4 text-gray-800">About Lamyae's Blog</h2>
+            <p class="text-gray-600">Lamyae's Blog is dedicated to sharing insightful articles on personal development, career growth, and productivity. Our mission is to inspire, motivate, and help you achieve your goals through knowledge and actionable advice.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="p-8 bg-white" style="background-image: url('https://www.bonjourdarling.com/wp-content/uploads/2024/05/look_article_blog_next-1600x1200.jpg  ');" >
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-semibold mb-4 text-gray-800">Contact Us</h2>
+            <form>
+                <div class="mb-4">
+                    <label for="name" class="block text-gray-700">Name</label>
+                    <input type="text" id="name" class="w-full p-3 border rounded-md" required>
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-gray-700">Email</label>
+                    <input type="email" id="email" class="w-full p-3 border rounded-md" required>
+                </div>
+                <div class="mb-4">
+                    <label for="message" class="block text-gray-700">Message</label>
+                    <textarea id="message" class="w-full p-3 border rounded-md" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="bg-blue-600 text-white px-6 py-3 rounded-md font-semibold hover:bg-blue-700">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-white p-6">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Lamyae Blog. All Rights Reserved.</p>
+            <div class="flex justify-center space-x-4 mt-4">
+                <a href="#" class="hover:text-gray-300">Facebook</a>
+                <a href="#" class="hover:text-gray-300">Twitter</a>
+                <a href="#" class="hover:text-gray-300">Instagram</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

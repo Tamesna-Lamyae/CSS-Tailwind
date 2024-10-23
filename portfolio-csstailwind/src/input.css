@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#sendButton {
+    background-color: rgba(255, 87, 34, 0.8); /* Couleur par défaut (orange avec transparence) */
+    background-image: url('./img/images.jpg');
+    background-size: cover; /* Ajuste l'image pour couvrir le bouton */
+    background-blend-mode: overlay; /* Mélange la couleur et l'image */
+}
+
+/* Lorsque la souris passe dessus */
+.custom-button:hover {
+    background-color: rgba(244, 67, 54, 0.9); /* Couleur au survol (rouge avec transparence) */
+}
+

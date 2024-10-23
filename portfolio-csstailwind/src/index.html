@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="./dist/styles.css" rel="stylesheet"> <!-- Assure-toi que le chemin est correct -->
+</head>
+<body class="bg-cover bg-center bg-fixed" style="background-image: url('./img/gg.jpg');">
+
+<!-- Header Section -->
+<header class="bg-black bg-opacity-80 shadow" style="background-image: url('./img/04-35-50-357_1440x550.webp'); background-size: cover; background-position: center;">
+    <div class="container mx-auto px-4 py-6 flex justify-between items-center">
+        <h1 class="text-4xl font-bold text-white shadow-lg">Your Name</h1>
+        <nav class="mt-4">
+            <ul class="flex space-x-4">
+                <li><a href="#home" class="text-white hover:text-teal-300">Home</a></li>
+                <li><a href="#projects" class="text-white hover:text-teal-300">Projects</a></li>
+                <li><a href="#contact" class="text-white hover:text-teal-300">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+    <!-- Hero Section -->
+    <section id="home" class="hero py-20 bg-gray-200 bg-opacity-70" style="background-image: url('./img/orange-black-colors-gradient-background-250nw-2290326607.webp'); background-size: cover;"> >
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold drop-shadow-md">Welcome to My Portfolio</h2>
+            <p class="mt-4">I am a [Your Profession].</p>
+        </div>
+    </section>
+
+ <!-- Skills Section -->
+ <section class="competences py-20 bg-black bg-opacity-80">
+    <div class="container mx-auto text-center">
+        <h2 class="text-3xl font-bold text-white shadow-lg">My Skills</h2>
+        <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+            <div class="bg-white bg-opacity-60 p-4 rounded shadow-lg" style="background-image: url('./img/orange-black-.jpg'); background-size: cover; color: black;">Skill 1</div>
+            <div class="bg-white bg-opacity-60 p-4 rounded shadow-lg" style="background-image: url('./img/orange-black-.jpg'); background-size: cover; color: black;">Skill 2</div>
+            <div class="bg-white bg-opacity-60 p-4 rounded shadow-lg" style="background-image: url('./img/orange-black-.jpg'); background-size: cover; color: black;">Skill 3</div>
+        </div>
+    </div>
+</section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects py-20 bg-gray-200 bg-opacity-70" style="background-image: url('./img/orange-black-colors-gradient-background-250nw-2290326607.webp'); background-size: cover;">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold text-gray-800 shadow-md">My Projects</h2>
+            <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+                <div class="bg-white bg-opacity-70 p-4 rounded shadow">
+                    <h3 class="font-bold">Project Title 1</h3>
+                    <p>Description of the project.</p>
+                </div>
+                <div class="bg-white bg-opacity-70 p-4 rounded shadow">
+                    <h3 class="font-bold">Project Title 2</h3>
+                    <p>Description of the project.</p>
+                </div>
+                <div class="bg-white bg-opacity-70 p-4 rounded shadow">
+                    <h3 class="font-bold">Project Title 3</h3>
+                    <p>Description of the project.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- Contact Section -->
+<section id="contact" class="contact py-20 bg-black bg-opacity-80" style="background-image: url('./img/images.jpg'); background-size: cover;">
+    <div class="container mx-auto text-center">
+        <h2 class="text-3xl font-bold text-white shadow-lg">Contact Me</h2>
+        <form class="mt-8 flex flex-col items-center">
+            <input type="text" placeholder="Your Name" class="border rounded p-2 mb-4 w-full md:w-1/2">
+            <input type="email" placeholder="Your Email" class="border rounded p-2 mb-4 w-full md:w-1/2">
+            <textarea placeholder="Your Message" class="border rounded p-2 mb-4 w-full md:w-1/2"></textarea>
+        </form>
+        <button id="sendButton" type="submit" class="bg-red-800 text-white p-2 rounded transition duration-300 hover:bg-red-600 w-full md:w-1/2">Send</button>
+
+    </div>
+
+</section>
+
+
+
+
+    <!-- Footer -->
+    <footer class="py-4 bg-gray-800 text-white text-center" style="background-image: url('./img/04-35-50-357_1440x550.webp'); background-size: cover;">
+        <p>&copy; 2024 Your Name. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
